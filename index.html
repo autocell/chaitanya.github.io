@@ -1,58 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaitanya Ramayanam - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Apple Vision</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Welcome to my portfolio website! I am a passionate developer with expertise in HTML, CSS, JavaScript, Kotlin, and Data Science.</p>
-    </section>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 
-    <section id="education" class="section">
-        <h2>Education</h2>
-        <ul>
-            <li>BTech from XYZ University</li>
-            <li>MS from ABS University</li>
-            <li>Transferred to IUY University for MS</li>
-        </ul>
-    </section>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <p>I have 2 years of experience working at POI company.</p>
-    </section>
+        <title>My Portfolio</title>
+    </head>
+    <body>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Kotlin</li>
-            <li>Data Science</li>
-        </ul>
-    </section>
+        <ul class="background-square">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        <!--=============== HEADER PROFILE ===============-->
+        <header class="profile container">
+            <!-- Theme Button-->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-    <footer>
-        <p>&copy; 2024 Apple Vision. All rights reserved.</p>
-    </footer>
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            <img src="assets/img/perfil.png" alt="Chaitanya profile picture" />
+                        </div>
+                    </div>
+                    <h2 class="profile__name">Chaitanya Ramayanam</h2>
+                    <h3 class="profile__profession"></h3>
 
-    <script src="script.js"></script>
-</body>
+                    <ul class="profile__social">
+                        <!--<a href="https://www.instagram.com/" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>-->
+                        <a href="https://www.linkedin.com/in/chaitanya-c-v-ramayanam-5a710a1b4/" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                        <a href="https://github.com/autocell" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                      <h3 class="profile__info-number">1.7</h3>
+                      <p class="profile__info-description">years of<br>experience</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+                    <a download="" href="assets/pdf/CR_Resume_V3.pdf" class="button">
+                        Download CV <i class="ri-download-cloud-2-line"></i>
+                    </a>
+                </div>
+
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                      PROJECTS
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                      SKILLS
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        EXPERIENCE
+                    </button>
+                </ul>
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <img src="assets/img/project1.jpg" alt="" class="projects__img">
+                            
+                          <div class="projects__modal">
+                            <div>
+                              <span class="projects__subtitle">Web</span>
+                              <h3 class="projects__title">Project 1</h3>
+                              <a target="_blank" href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
+                            
+                          <div class="projects__modal">
+                            <div>
+                              <span class="projects__subtitle">Data</span>
+                              <h3 class="projects__title">Project 2</h3>
+                              <a target="_blank" href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                        <article class="projects__card">
+                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                            
+                          <div class="projects__modal">
+                            <div>
+                              <span class="projects__subtitle">Cloud</span>
+                              <h3 class="projects__title">Project 3</h3>
+                              <a target="_blank" href="#" class="projects__button button button__small">
+                                <i class="ri-link"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </article>
+                    </div>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Data Science
+                            </h3>
+                            <div class="skills__box">
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Machine Learning</h3>
+                                            <span class="skills__level">Supervised, Unsupervised and Reinforced Learning</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Data Analysis</h3>
+                                            <span class="skills__level">Matplotlib, Seaborn</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Scikit Learn</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="ri-checkbox-circle-line"></i>
+
+                                    <div>
+                                        <h3 class="skills__name">OpenCV</h3>
+                                        <span class="skills__level"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Pandas</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Numpy</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Computer Vision</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Neural Networks</h3>
+                                            <span class="skills__level">Keras, TensorFlow and PyTorch</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Database
+                            </h3>
+                            <div class="skills__box">
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">SQL</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">PostgreSQL</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Vector Database</h3>
+                                            <span class="skills__level">Pinecone</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">GraphQL</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Tools
+                            </h3>
+                            <div class="skills__box">
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Version Control</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">PowerBI</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">VS Code</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">SiteCore</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Jenkins</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Python Notebook</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Programming Languages
+                            </h3>
+                            <div class="skills__box">
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">C</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">R Language</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Java</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">C++</h3>
+                                            <span class="skills__level"></span>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                Chaitanya Ramayanam
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
